@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devon Martin Yoga</title>
+    <script src="https://kit.fontawesome.com/66eb0964bc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+
+        h1 {
+            text-align:center;
+            margin:2.8vw 0px 2.6vw 0px;
+            padding:0;
+            font-size:clamp(20px,3vw,60px);
+        }
+
+        .schedule_table {
+            background-image:linear-gradient(to top right, #DFCFD9, #FEDDD7);
+            height:auto;
+            width:95vw;
+            margin:0 auto;
+            margin-top:20px;
+            margin-bottom:2vw;
+            text-align:center;
+        }
+
+        .schedule_table table {
+            margin:0 auto;
+            border-collapse:collapse;
+            border-spacing:20px 0px;
+            padding:2vw;
+            width:85vw;
+        }
+
+        .schedule_table td,th {
+            padding:2vw 6vw;
+            font-size:clamp(16px,1.8vw,50px);
+            color:white;
+            text-align:center;
+        }
+
+        .schedule_table th {
+            border-bottom:2px solid white;
+            color:rgb(153, 116, 153);
+        }
+
+        .schedule_table tr {
+            border-bottom:1px solid white;
+        }
+
+        .schedule_table .bottom_row {
+            border:none;
+        }
+
+        .schedule_table a {
+            border-bottom:1px solid white;
+            text-decoration:none;
+            color:white;
+            transition:font-size 0.3s ease 0s;
+        }
+
+        .schedule_table a:hover {
+            font-size:clamp(16px,1.9vw,52px);
+        }
+
+        .bac_big {
+            /*background-color: red;*/
+            margin:0;
+            display:block;
+            text-align:center;
+            margin-top:0;
+            padding:0;
+            margin-bottom:4.5vw;
+        }
+
+        .bac_big button {
+            width:21vw;
+            min-width:120px;
+            height:5vw;
+            min-height:22px;
+            border-radius:3vw;
+            border:none;
+            font-size:clamp(16px,2.2vw,50px);
+            color:white;
+            transition:all 0.3s ease 0s;
+            background-color: #DFCFD9;
+            font-family:'quicksand', sans-serif;
+        }
+
+        .bac_big button:hover {
+            background-color: #FEDDD7;
+            cursor: pointer;
+        }
+
+        .bac_big a {
+            text-decoration:none;
+        }
+
+        .zoom_download {
+            height:3vw;
+            width:20vw;
+            min-width:170px;
+            padding:0;
+            text-align:center;
+            display:block;
+            margin:0 auto;
+        }
+
+        .zoom_download p {
+            font-size:clamp(16px,1.7vw,50px);
+            margin:0;
+            padding:0;
+        }
+
+        .zoom_download a {
+            text-decoration: none;
+            color:rgb(153, 116, 153);
+            transition:all 0.3s ease 0s;
+        }
+
+        .zoom_download a:hover {
+            color:#FEDDD7;
+        }
+
+        .pricing_table_div {
+            margin-bottom:3vw;
+        }
+
+        .pricing_table_div h2 {
+            text-align:center;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-size:clamp(16px,2.5vw,50px);
+        }
+
+        .pricing_table_div td {
+            padding:1vw 15vw;
+            font-size:clamp(16px,2vw,50px);
+        }
+
+        .pricing_table_div table {
+            margin:0 auto;
+            margin-top:0px;
+        }
+
+        .pricing_table_div p {
+            text-align:center;
+            font-size:clamp(16px,2vw,50px);
+        }
+
+        h3 {
+            text-align:center;
+            margin:0;
+            padding-top:4vw;
+            padding-bottom:1.5vw;
+        }
+
+        .yinyang_div h3 {
+            padding-top:5vw;
+        }
+
+        .class_descriptions {
+            margin-top:0px;
+            padding-top:0px;
+            display:flex;
+            flex-direction:column;
+        }
+
+        .class_descriptions p {
+            margin:0px 6vw;
+            padding:0px;
+            text-align:center;
+            line-height:1.5;
+        }
+
+        .class_descriptions div{
+            height:40vw;
+            color:white;
+            background-blend-mode: darken;
+            font-size:clamp(10px,2.5vw,60px);
+            margin:1vw 2.6vw;
+            padding:0px;
+            font-weight:bold;
+        }
+
+        .beginners_div {
+            background-image:url("https://lh3.googleusercontent.com/YgL923gnrgCrplfCAFcwuUPkSSENwdr5EBgW0_8DtTn9cJpKiG7yJzODA_85dyLaQvC1NQ7t7gVN1rITb0hrxNi0Kb75Ec2yZEXxVYgop30ZOFztkTVd7YTKl1dIZ8KDglK-_jw6x3K6jzKDzjXkTMQg-XIm3w6-zGXgOogmNW8AEzLJIWlWYVwzUwP94mVfUls6--d7G00o3zU8UwgGk62VXCbxlUdtb_lJazEielw2AdyjLZdTkC6WaFgjRdbCJMl369VuGJ9qtJDEzUH6ZTSGtR8zUJxeh_IKILmSeLaYlHzvHTkGT8rlHiFk1WMuUwV8fC7hCuiIPIQ9WzXr3zFAV-lkOkHNdwnbROPWQaztwze6VY1N3mHOIPqj-dIsS3z2OpjyVgPEQuw36HGXyFm26FbjTOj8yXk_inUCNbDqcE6gzBGzEpfr7ncxZtivDo4_5hk1QAK6zvLn_jsm9fMYELYe6xRP89DA-X2tG8jgJ08R3KYo6cuF0NE7R5xvKI7Lx22BNtvNiz_EFTe98Q-MEPJKYYcLLujz7pKM0BR_hbsSka6tq8huuN91LKieVjTUBwB7y6EsXPB1w24ZdzspTVn3R1sOy8H-t6ZqovIETk5FB3FG-Hq2BJduHtVRrK2hr4iSwlFca1p9Hb5qXZvIx6_ZhjJROfERh_6RTTWtXy1wxR2QWks=w1804-h1202-no?authuser=0");
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .vinyasa_div {
+            background-image:url("https://scontent.fyto1-2.fna.fbcdn.net/v/t1.0-9/96516024_10216985505814466_7394340405464006656_o.jpg?_nc_cat=106&_nc_sid=730e14&_nc_ohc=A85Vad63cBYAX_-7VFU&_nc_ht=scontent.fyto1-2.fna&oh=e3e7e37b738c92bfd140af479e626e20&oe=5EDD7953");
+            background-size:cover;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .slow_div {
+            background-image:url("https://scontent.fyto1-2.fna.fbcdn.net/v/t1.0-9/96818161_10216985505294453_8580016606275436544_o.jpg?_nc_cat=107&_nc_sid=730e14&_nc_ohc=ehi8mXKcoxIAX-Baukr&_nc_ht=scontent.fyto1-2.fna&oh=95f6082e171b5a4f5cd96b4b93d7204b&oe=5EDDE4F7");
+            background-size:cover;
+            background-position:center;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .slow_div a {
+            color:white;
+            transition:all 0.3s ease 0s;
+        }
+
+        .slow_div a:hover {
+            opacity:0.5;
+        }
+
+        .yinyang_div {
+            background-image:url("https://lh3.googleusercontent.com/E9kUejB_1T_KWnuZO_-4RJNj27_fFpMueMJRjSHjfMPSJTgr9aSNpHLWXwerptR5T550qr4sv3-ytCHLxScDkwb0SoUPiRAew4kAGLQeoQ3nmxPe2w7Om2m2w3SAm-7-EYl5IwZHgQd-sy4Y88VDKs92IsodM3m-QnPC63yyBOWTci3IS8ahCfKOWXf-g-YZ86IwjVlRdGLts-s9TXpt6loRmBdc1ZfTjpFgVC-O9C4wqlxPrY-IYqRDOyIFCwhHMVhdgu8B9NxeOizOOkTLxN9boNSwQA_yxgAQY7mRhDlHCmB-mdW8mS02f-rvmolR4F3wuHM2uhi1xMX7R9wGTJe7pNcCzbksgjsQN8fr55RPs3m170B1iM6VQdtUq7bhpBiQE7QW8sa-oRxP3uY-21RHYmi2BpBnkjrxiNnH8gc5gXqiaXNkfrha6bsk7znaQKcf7yqNHPvOi4GhWnbTcYq_mXkz_KUudY0b8pxEooO2v6OTmq9kmsdV8ZVS8bOOFAIdbHy07JUTPMiar-a1v1kkaZekuoIRJJvSUuRJ5nKxWioRJ5ZgKFXzwh6X-SK1cyXSHaeletwrooUzXdx3xy3ojitH7OR5jUc36S6VG0AigTUjxDQ-YJhuxCF58_7VoGlF2nYXDTD4ZFNqaxD5IaSL2HFrhERKVjIpTSVOybQ2Kuv4Oe04IkA=w1804-h1202-no?authuser=0");
+            background-size:cover;
+            background-position:center;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo_div">
+            <a href="index.html" title="Home"><img class="logo" src="https://scontent.fyto1-1.fna.fbcdn.net/v/t1.0-9/95940062_10216951275998742_1747872679530070016_o.jpg?_nc_cat=111&_nc_sid=730e14&_nc_ohc=5ZblKv2NOH8AX_9ZcrI&_nc_ht=scontent.fyto1-1.fna&oh=35299add2fda126f3b85e587fe97001c&oe=5ED9676E"></a>
+        </div>
+        <input type="checkbox" class="nav_toggle" id="nav_toggle">
+        <div class="navigation_buttons_div">
+            <ul class="navigation_buttons">
+                <!--<li><a href="index.html">Home</a></li>-->
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="about_me.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="book_class.html"><button>Book a Class</button></a></li>
+            </ul>
+        </div>
+        <label for="nav_toggle" class="nav_toggle_label">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="social_icons_div">
+            <ul class="social_icons">
+                <a href="https://www.facebook.com/devonmartinyoga" title="facebook.com/devonmartinyoga" target="_blank"><li><i class="fab fa-facebook-f"></i></li></a>
+                <a href="https://www.instagram.com/devonmartinn_/?hl=en" title="instagram.com/devonmartinn_" target="_blank"><li><i class="fab fa-instagram"></i></li></a>
+                <a href="https://www.youtube.com/user/mellissa5203/videos" title="youtube.com/devonmartin" target="_blank"><li><i class="fab fa-youtube"></i></li></a>
+                <a href="https://open.spotify.com/user/21zp7qf3cdzb7cynok7nuoliy?si=tJxiJ4ToSaSDBNNSw0Y0Zg" title="spotify.com/devonmartin" target="_blank"><li><i class="fab fa-spotify"></i></li></a>
+            </ul>
+        </div>
+    </header>
+    <hr class="top_line">
+    <h1>Zoom Class Schedule</h1>
+    <section class="zoom_download">
+        <a href="https://zoom.us/" title="Download Zoom" target="_blank"><p>Download Zoom Here</p></a>
+    </section>
+    <section class="schedule_table">
+        <table>
+            <tr><th>Day</th><th>Time (EST)</th><th>Type</th></tr>
+            <tr><td rowspan="2">Tuesday</td><td>10:00am - 10:45am</td><td><a href="#beginners_anchor" title="What is this?">Beginners</a></td></tr>
+            <tr><td>5:00pm - 6:00pm</td><td><a href="#vinyasa_anchor" title="What is this?">Vinyasa Flow</a></td></tr>
+            <tr><td rowspan="2">Thursday</td><td>10:00am - 11:00pm</td><td><a href="#slow_anchor" title="What is this?">Slow Flow</a></td></tr>
+            <tr><td>5:00pm - 6:00pm</td><td><a href="#slow_anchor" title="What is this?">Slow Flow</a></td></tr>
+            <tr><td>Saturday</td><td>11:00am - 12:00pm</td><td><a href="#vinyasa_anchor" title="What is this?">Vinyasa Flow</a></td></tr>
+            <tr><td rowspan="2" class="sunday_td">Sunday</td><td>10:00am - 10:45am</td><td><a href="#beginners_anchor" title="What is this?">Beginners</a></td></tr>
+            <tr class="bottom_row"><td>11:30am - 12:30pm</td><td><a href="#yinyang_anchor" title="What is this?">Yin/Yang</a></td></tr>
+        </table>
+    </section>
+    <section class="bac_big">
+        <div class="big_button">
+            <a href="book_class.html" target="_blank"><button>Book a Class</button></a>
+        </div>
+    </section>
+    <section>
+        <div class="pricing_table_div">
+            <h2>Pricing</h2>
+            <table>
+                <tr><td>Single Class</td><td>$8.00</td></tr>
+                <tr><td>Private Session</td><td>$50.00</td></tr>
+            </table>
+            <p>*Prices in Canadian dollars</p>
+        </div>
+    </section>
+    <section class="class_descriptions">
+        <div class="beginners_div">
+            <h3 id="beginners_anchor">Beginners</h3>
+            <p>This class is perfect for anyone who is brand new to yoga or has little experience. We move slowly through standing, seated, laid and prone positions. We will begin to practice linking breath with movement and dip our toes in meditation. Extra instruction is given to guide each student through each posture and visual demonstration will be given through the entire class. Leave feeling relaxed, rejuvenated and restored.</p>
+        </div>
+        <div class="vinyasa_div">
+            <h3 id="vinyasa_anchor">Vinyasa Flow</h3>
+            <p>This class is a high energy flow that links powerful breath and dynamic movements. We work with our flexibility, strength and endurance, moving in and out of poses with creative transitions, sure to work up a sweat, tone your body and relax your mind. This class is perfect for intermediate and advanced practitioners.</p>
+        </div>
+        <div class="slow_div">
+            <h3 id="slow_anchor">Slow Flow</h3>
+            <p>This class is a type of <a href="#vinyasa_anchor">Vinyasa Flow yoga</a> that is gentler and slower paced, allowing students to bring more awareness into each pose. You will get a great stretch, opening up several spaces in the body, while still flowing through the class with smooth transitions. Relax your mind and give tons of love back into your body. This class is perfect for all-levels, modifications and additions will be available.</p>
+        </div>
+        <div class="yinyang_div">
+            <h3 id="yinyang_anchor">Yin/Yang</h3>
+            <p>Whether you are a power yoga lover or a yin enthusiast, this class is for you. Here we seek balance by mixing the two loved styles. It begins with 30 minutes of a fast-paced flow to get you sweating then we slow it down with 30 minutes of deep, restorative postures and meditation to melt stress away. This class leaves you feeling balanced, refreshed and renewed. Great for all levels.</p>
+        </div>
+    </section>
+    <section class="pricing">
+        <p></p>
+    </section>
+    <footer>
+        <p class="terms">Copyright @ Devon Martin Yoga, LLC</p>
+    </footer>
+</body>
+</html>
+

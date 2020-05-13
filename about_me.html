@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devon Martin Yoga</title>
+    <script src="https://kit.fontawesome.com/66eb0964bc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+
+        .prayer {
+            background-image:url("https://scontent.fyto1-2.fna.fbcdn.net/v/t1.0-9/93384861_1606420172871659_3673626536340094976_o.jpg?_nc_cat=108&_nc_sid=e3f864&_nc_ohc=-3vUvt13Kq8AX9Q-92D&_nc_ht=scontent.fyto1-2.fna&oh=cb15c5f873bd2e5f932b4b66a542bf00&oe=5EC2ADE4");
+            height:98vh;
+            width:100%;
+            opacity:0.9;
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position: middle;
+            padding:0;
+            margin:0;
+            text-align: center;
+        }
+
+        @media only screen and (max-width:768px) {
+            .prayer {
+                height:82vw;
+            }
+        }
+
+        .title {
+            margin:0;
+            padding:0;
+        }
+        
+        h1 {
+            padding:0;
+            margin-top:3.5vw;
+            margin-bottom:0px;
+            color:rgb(153, 116, 153);
+            font-size:clamp(20px,4vw,50px);
+            text-align:center;
+        }
+
+        .about_and_info h2 {
+            color:rgb(153, 116, 153);
+            text-align:center;
+            font-size:clamp(13px,2.9vw,50px);
+        }
+
+        .my_background {
+            display:flex;
+            justify-content: space-evenly;
+        }
+
+        .my_background_text {
+            width:42%;
+            height:auto;
+            /*background-color: red;*/
+            margin:5vw 0px 0px 3vw;
+            text-align:center;
+            font-size:clamp(16px,1.7vw,50px);
+            line-height: 1.8;
+            padding:0;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .my_background {
+                display:flex;
+                flex-direction:column-reverse;
+            }
+            .my_background_text {
+                width:85%;
+                height:auto;
+                margin:0 auto;
+                padding:0;
+                display:block;
+                line-height:1.6;
+            }
+        }
+
+        .my_background_text h2 {
+            padding:0;
+            margin:0;
+            font-size:clamp(18px,3vw,50px);
+        }
+
+        .my_background_text a {
+            transition: all 0.3s ease 0s;
+            color:rgb(153, 116, 153);
+        }
+
+        .my_background_text a:hover {
+            color:#FEDDD7;
+        }
+
+        .my_background_pic {
+            margin-top:50px;
+            margin-right:30px;
+            width:40%;
+        }
+
+        .my_background_pic img {
+            width:100%;
+            height:auto;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .my_background_pic {
+                margin:0 auto;
+                display:block;
+                width:55%;
+                height:auto;
+                margin-top:5vw;
+                margin-bottom:5vw;
+            }
+        }
+
+        .teaching_style {
+            display:flex;
+            justify-content: space-evenly;
+        }
+
+        .teaching_style_pic {
+            width:40%;
+            margin-top:50px;
+            margin-left:30px;
+        }
+
+        .teaching_style_pic img {
+            width:100%;
+            height:auto;
+        }
+
+        .teaching_style_text {
+            width:42%;
+            height:auto;
+            /*background-color: red;*/
+            margin:50px 0px 0px 30px;
+            text-align:center;
+            font-size:clamp(16px,1.7vw,50px);
+            line-height: 1.8;
+            padding:0;
+        }
+
+        @media only screen and (max-width:768px) {
+            .teaching_style {
+                display:flex;
+                flex-direction:column;
+            }
+            .teaching_style_pic {
+                margin:0 auto;
+                display:block;
+                width:70%;
+                height:auto;
+                margin-top:8vw;
+            }
+            .teaching_style_text {
+                display:block;
+                margin:0 auto;
+                padding:0;
+                width:85%;
+                line-height:1.6;
+            }
+        }
+
+        .teaching_style h2 {
+            padding:0;
+            margin-top:5vw;
+            font-size:clamp(18px,3vw,50px);
+        }
+
+        .social_icons_div_big {
+            width:50%;
+            margin:0 auto;
+            height:18vw;
+            text-align:center;
+            /*background-color: blue;*/
+        }
+
+        .social_icons_div_big h2{
+            margin-top:3.4vw;
+            color:rgb(153, 116, 153);
+            text-align:center;
+            font-size:clamp(20px,2.9vw,60px);
+        }
+
+        .social_icons_div_big p {
+            margin-top:2.5vw;
+            font-size:clamp(16px,1.8vw,50px);
+        }
+
+        .social_icons_big /*This is a <ul> */ {
+            list-style-type: none;
+            padding:0px;
+            margin-top:2vw;
+        }
+
+        @media only screen and (min-width:2560px) {
+            .social_icons_big {
+                margin-top:4vw;
+            }
+        }
+
+        .social_icons_big li {
+            padding:0px;
+            display:inline-block;
+            margin:0px 2vw;
+            color:rgb(153, 116, 153);
+        }
+
+        @media only screen and (max-width:600px) {
+            .social_icons_div_big {
+                width:90%;
+                height:65vh;
+                margin-top:5vh;
+                margin-bottom:6vh;
+            }
+
+            .social_icons_big {
+                margin:6vh 0px;
+            }
+        
+            .social_icons_big li {
+                display:block;
+                margin-top:3vh;
+                margin-bottom:3vh;
+            }
+        }
+
+        .social_icons_big li i {
+            transition: all 0.3s ease 0s;
+        }
+
+        .social_icons_big li i:hover {
+            color:#FEDDD7;
+        }
+
+        .contact {
+            height:100px;
+        }
+
+        hr {
+            margin-top:3%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+            <div class="logo_div">
+                <a href="index.html" title="Home"><img class="logo" src="https://scontent.fyto1-1.fna.fbcdn.net/v/t1.0-9/95940062_10216951275998742_1747872679530070016_o.jpg?_nc_cat=111&_nc_sid=730e14&_nc_ohc=5ZblKv2NOH8AX_9ZcrI&_nc_ht=scontent.fyto1-1.fna&oh=35299add2fda126f3b85e587fe97001c&oe=5ED9676E"></a>
+            </div>
+            <input type="checkbox" class="nav_toggle" id="nav_toggle">
+            <div class="navigation_buttons_div">
+                <ul class="navigation_buttons">
+                    <!--<li><a href="index.html">Home</a></li>-->
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="about_me.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="book_class.html"><button>Book a Class</button></a></li>
+                </ul>
+            </div>
+
+            <label for="nav_toggle" class="nav_toggle_label">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="social_icons_div">
+                <ul class="social_icons">
+                    <a href="https://www.facebook.com/devonmartinyoga" title="facebook.com/devonmartinyoga" target="_blank"><li><i class="fab fa-facebook-f"></i></li></a>
+                    <a href="https://www.instagram.com/devonmartinn_/?hl=en" title="instagram.com/devonmartinn_" target="_blank"><li><i class="fab fa-instagram"></i></li></a>
+                    <a href="https://www.youtube.com/user/mellissa5203/videos" title="youtube.com/devonmartin" target="_blank"><li><i class="fab fa-youtube"></i></li></a>
+                    <a href="https://open.spotify.com/user/21zp7qf3cdzb7cynok7nuoliy?si=tJxiJ4ToSaSDBNNSw0Y0Zg" title="spotify.com/devonmartin" target="_blank"><li><i class="fab fa-spotify"></i></li></a>
+                </ul>
+            </div>
+    </header>
+    <section class="prayer">
+    </section>
+    <section class="title">
+        <h1>About Devon</h1>
+    </section>
+    <hr>
+    <section class="about_and_info">
+        <div class="my_background">
+            <div class="my_background_text">
+                <h2>Background</h2>
+                <p>Devon grew up in southern Ontario, Canada, where she enjoyed an active lifestyle from an early age by playing sports and spending time in the outdoors. She was first introduced to practising yoga after moving to British Columbia to study Psychology at UBC Kelowna. Devon began her yoga teaching career in 2018 by studying at and graduating from the <a href="https://www.rishikeshyogpeeth.com/" title=rishikeshyogpeeth.com target="_blank">Rishikesh Yogpeeth</a> Yoga School in Rishikesh, India, where she achieved her 200 hour qualification in Hatha yoga. She subsequently completed her 300 hour qualification in Vinyasa yoga at <a href="https://www.sampoornayoga.com/" target="_blank" title="sampoornayoga.com">Sampoorna Yoga</a> in Goa, India which she graduated from in March 2020.</p>
+            </div>
+            <div class="my_background_pic">
+                <img src="https://scontent.fyto1-2.fna.fbcdn.net/v/t1.0-9/94491325_10216851221737448_3194453669533712384_n.jpg?_nc_cat=109&_nc_sid=8bfeb9&_nc_ohc=OJjUD7dcDLMAX-20cw5&_nc_ht=scontent.fyto1-2.fna&oh=f7299d4742e37fb283343246657ee3b1&oe=5ECE41FF">
+            </div>
+        </div>
+        <hr>
+        <div class="teaching_style">
+            <div class="teaching_style_pic">
+                <img src="https://scontent.fyyz1-2.fna.fbcdn.net/v/t1.0-9/95665158_10216923849673101_8695260521676406784_n.jpg?_nc_cat=110&_nc_sid=8bfeb9&_nc_ohc=t8fmxl1vjxsAX9R2dDq&_nc_ht=scontent.fyyz1-2.fna&oh=e807b25ea2cbf94cb532499fec0b953d&oe=5ED18FFA">
+            </div>
+            <div class="teaching_style_text">
+                <h2>Teaching Style</h2>
+                <p>In her classes, Devon loves to combine creative sequencing, a dose of inspiration and tons of gratitude and self love to help you deepen your practice. She seeks to help others thrive by nurturing their body, mind and soul with yoga. Her hope is that you step off the mat feeling refreshed, nourished and balanced. </p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <div class="social_icons_div_big">
+        <h2>Connect With Devon</h2>
+        <ul class="social_icons_big">
+            <a href="https://www.facebook.com/devonmartinyoga" title="facebook.com/devonmartinyoga" target="_blank"><li><i class="fab fa-facebook-f fa-3x"></i></li></a>
+            <a href="https://www.instagram.com/devonmartinn_/?hl=en" title="instagram.com/devonmartinn_" target="_blank"><li><i class="fab fa-instagram fa-3x"></i></li></a>
+            <a href="https://www.youtube.com/user/mellissa5203/videos" title="youtube.com/devonmartin" target="_blank"><li><i class="fab fa-youtube fa-3x"></i></li></a>
+            <a href="https://open.spotify.com/user/21zp7qf3cdzb7cynok7nuoliy?si=tJxiJ4ToSaSDBNNSw0Y0Zg" title="spotify.com/devonmartin" target="_blank"><li><i class="fab fa-spotify fa-3x"></i></li></a>
+        </ul>
+        <p>Or email <u>devon-martin@hotmail.com</u></p>
+    </div>
+    <footer>
+        <p class="terms"p>Copyright @ Devon Martin Yoga, LLC</p>
+    </footer>
+</body>
+</html>

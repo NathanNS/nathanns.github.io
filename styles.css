@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+        body {
+            color:rgb(153, 116, 153);
+            font-family: 'quicksand',sans-serif; /*will need to add additonal fonts as most computers probably won't have this font. Unless the import function adds the font to every computer?*/
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            height:60px;
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin:0;
+            padding:0;
+            background:white;
+            position:relative;
+        }
+
+        @media only screen and (min-width:2560px) {
+            header {
+                height:100px;
+            }
+        }
+
+        .logo_div {
+            width:20vw;
+            height:60px;
+            display:flex;
+            align-items:center;
+            /*background-color:green;*/
+        }
+
+        .logo {
+            width:18vw;
+            min-width:180px;
+            margin:0 auto;
+            display:block;
+            margin-left:2.5vw;
+            height:auto;
+            transition:width 300ms ease;
+        }
+
+        .navigation_buttons_div {
+            width:50vw;
+            height:60px;
+            display:flex;
+            align-items:center;
+            /*background-color: red;*/
+        }
+
+        .navigation_buttons /*This is a <ul> */{
+            list-style-type: none;
+            text-align:center;
+            padding:0px;
+            margin:0 auto;
+        }
+
+        .navigation_buttons li {
+            font-size:clamp(16px,1.3vw,40px);
+            display:inline-block;
+            margin:0px 1.3vw;
+            padding:0px;
+        }
+
+        .navigation_buttons li a {
+            transition:all 0.3s ease 0s;
+            color:rgb(153, 116, 153);
+            text-decoration: none;
+        }
+
+        .navigation_buttons li a:hover {
+            text-decoration: none;
+            color:#FEDDD7;
+        }
+
+        button {
+            font-family: 'quicksand', sans-serif;
+            font-size:clamp(16px,1.2vw,40px);
+            color:white;
+            text-decoration:none;
+            border-radius:1.8vw;
+            transition:all 0.3s ease 0s;
+            background-color: #DFCFD9;
+            border:none;
+            height:2.8vw;
+            width:13vw;
+        }
+
+        button:hover {
+            background-color:#FEDDD7;
+            cursor:pointer;
+        }
+
+        .social_icons_div {
+            width:20%;
+            height:60px;
+            /*background-color: blue;*/
+            display:flex;
+            align-items:center;
+        }
+
+        .social_icons /*This is a <ul> */ {
+            list-style-type: none;
+            padding:0;
+            margin:0 auto;
+        }
+
+        .social_icons li {
+            padding:0px;
+            display:inline-block;
+            margin:0px 8px;
+            color:rgb(153, 116, 153);
+        }
+
+        .social_icons li i {
+            transition: all 0.3s ease 0s;
+        }
+
+        .social_icons li i:hover {
+            color:#FEDDD7;
+        }
+
+        @media only screen and (max-width:768px) {
+            .navigation_buttons_div {
+                position:absolute;
+                opacity:0.9;
+                top:100%;
+                right:0;
+                z-index:999;
+                background:white;
+                height:auto;
+                width:100%;
+                border-bottom-left-radius:20px;
+                border-bottom-right-radius:20px;
+                transform:scale(1,0);
+                transition:transform 300ms ease-out 0s;
+                transform-origin:top;
+            }
+            .navigation_buttons {
+                line-height:30px;
+            }
+            .navigation_buttons li {
+                font-size:clamp(16px,1.7vw,30px);
+                display:block;
+                margin:0;
+                padding:0;
+            }
+            button {
+                background:none;
+                color:rgb(153, 116, 153);
+                margin:0;
+                padding:0;
+                border-radius:0;
+                height:auto;
+                width:auto;
+            }
+
+            button:hover {
+                background:none;
+                color:#FEDDD7;
+            }
+
+            .social_icons_div {
+                display:none;
+            }
+
+            .nav_toggle:checked ~ .navigation_buttons_div {
+                transform:scale(1,1);
+            }
+
+            .nav_toggle {
+                display:none;
+            }
+            .nav_toggle_label {
+                margin-right:4vw;
+            }
+        }
+
+        @media only screen and (min-width:769px) {
+            .nav_toggle {
+                display:none;
+            }
+            .nav_toggle_label {
+                display:none;
+            }
+        }
+
+        footer {
+            background-image:linear-gradient(to top right, #DFCFD9, #FEDDD7);
+            height:120px;
+            padding:0;
+        }
+
+        .terms {
+            color:white;
+            text-align:center;
+            position:relative;
+            top:49px;
+            font-size:clamp(16px,1.7vw,50px)
+        }
+        
+        @media only screen and (min-width:2560px) {
+            footer {
+                height:180px;
+            }
+            .terms {
+                top:65px;
+            }
+        }
+
+        hr {
+            color:rgb(153, 116, 153);
+            width:90vw;
+            opacity:0.3;
+        }
+
+        .top_line {
+            margin:0 auto;
+            padding:0;
+            align-self: center;
+        }
