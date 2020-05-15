@@ -146,9 +146,19 @@
             margin-top:0px;
         }
 
-        .pricing_table_div p {
+        .pricing_table_div .CAD {
             text-align:center;
+            font-size:clamp(13px,1.5vw,50px);
+            color:black;
+            padding:0;
+            margin:0;
+        }
+
+        .pricing_table_div .covid {
             font-size:clamp(16px,2vw,50px);
+            text-align:center;
+            padding:0;
+            margin:0;
         }
 
         h3 {
@@ -184,6 +194,11 @@
             margin:1vw 2.6vw;
             padding:0px;
             font-weight:bold;
+        }
+
+        .class_descriptions h2 {
+            text-align:center;
+            font-size:clamp(18px,4vw,60px);
         }
 
         .beginners_div {
@@ -279,10 +294,12 @@
                 <tr><td>Single Class</td><td>$8.00</td></tr>
                 <tr><td>Private Session</td><td>$50.00</td></tr>
             </table>
-            <p>*Prices in Canadian dollars</p>
+            <p class="CAD">*Prices in Canadian dollars.</p>
+            <p class="covid">50% of all proceeds will be donated to hospitals in Ontario for COVID-19 relief.</p>
         </div>
     </section>
     <section class="class_descriptions">
+        <h2>Styles</h2>
         <div class="beginners_div">
             <h3 id="beginners_anchor">Beginners</h3>
             <p>This class is perfect for anyone who is brand new to yoga or has little experience. We move slowly through standing, seated, laid and prone positions. We will begin to practice linking breath with movement and dip our toes in meditation. Extra instruction is given to guide each student through each posture and visual demonstration will be given through the entire class. Leave feeling relaxed, rejuvenated and restored.</p>
